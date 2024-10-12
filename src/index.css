@@ -19,13 +19,18 @@ body {
   color: white;
 }
 
+<<<<<<< HEAD
 /* Album styling */
+=======
+
+>>>>>>> 9d4bff3 (added components and styling)
 .album-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   padding: 20px;
   grid-template-columns: repeat(4, 1fr)
+<<<<<<< HEAD
 }
 
 /* Cover container */
@@ -155,4 +160,6 @@ body {
     width: 80%;
     margin-bottom: 170px;
   }
+=======
+>>>>>>> 9d4bff3 (added components and styling)
 }

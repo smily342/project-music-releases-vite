@@ -1,9 +1,16 @@
+<<<<<<< HEAD
 /* eslint-disable react/prop-types */
 import ArtistName from "./ArtistName";
 import "./index.css";
 import dotsIcon from "./assets/icons/dots.svg";
 import heartIcon from "./assets/icons/heart.svg";
 import playIcon from "./assets/icons/play.svg";
+=======
+
+import React from "react";
+import ArtistName from "./ArtistName";
+
+>>>>>>> 9d4bff3 (added components and styling)
 
 const Album = ({ album }) => {
     const { name, images, artists, external_urls } = album;
@@ -48,3 +55,6 @@ const Album = ({ album }) => {
 };
 
 export default Album;
+
+
+
