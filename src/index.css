@@ -1,8 +1,7 @@
 :root {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -19,18 +18,12 @@ body {
   color: white;
 }
 
-<<<<<<< HEAD
-/* Album styling */
-=======
-
->>>>>>> 9d4bff3 (added components and styling)
+/* Album list styling */
 .album-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
   padding: 20px;
-  grid-template-columns: repeat(4, 1fr)
-<<<<<<< HEAD
 }
 
 /* Cover container */
@@ -88,7 +81,6 @@ body {
   align-items: center;
   width: 100%;
   height: 100%;
-
 }
 
 /* Show icons on hover */
@@ -131,6 +123,7 @@ body {
   margin-top: 150px;
   z-index: 5;
   position: relative;
+  transition: color 0.3s ease;
 }
 
 .artist-link {
@@ -138,9 +131,16 @@ body {
   font-size: 14px;
   color: #a0a0a0;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-/* Media queries */
+/* Hover effect for album and artist links */
+.album-link:hover,
+.artist-link:hover {
+  color: #1db954; /* Spotify green color for hover */
+}
+
+/* Media queries for responsiveness */
 @media only screen and (max-width: 600px) {
   .album-list {
     grid-template-columns: repeat(1, 1fr);
@@ -160,6 +160,11 @@ body {
     width: 80%;
     margin-bottom: 170px;
   }
-=======
->>>>>>> 9d4bff3 (added components and styling)
+}
+
+/* Desktop view: 4 albums per row */
+@media only screen and (min-width: 1024px) {
+  .album-list {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
